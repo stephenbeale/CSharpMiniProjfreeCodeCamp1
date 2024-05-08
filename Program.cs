@@ -10,7 +10,9 @@ namespace CSharpMiniProjfreeCodeCamp1
     {
         static void Main(string[] args)
         {
-
+            int age = 23;
+            Console.WriteLine(age);
+            Console.ReadLine();
         }
     }
 }
