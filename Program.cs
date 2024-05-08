@@ -12,6 +12,9 @@ namespace CSharpMiniProjfreeCodeCamp1
         {
             int age = 23;
             Console.WriteLine(age);
+
+            //L enforces long, rather than int32
+            long bigNumber = 90000000L;
             Console.ReadLine();
         }
     }
