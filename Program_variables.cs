@@ -54,8 +54,6 @@
 //            Console.WriteLine($"Decimal max: {decimal.MaxValue}");
 //            Console.WriteLine($"Decimal min: {decimal.MinValue}");
 
-
-
 //            Console.ReadLine();
 
 //        }
