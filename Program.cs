@@ -33,6 +33,14 @@ namespace CSharpMiniProjfreeCodeCamp1
             Console.WriteLine($"Double max value: {double.MaxValue}");
             Console.WriteLine($"Double min value: { double.MinValue}");
 
+            //F at end to register number with decimal as a float, not a double
+            float precision = 5.000001F;
+
+            Console.WriteLine(precision);
+            Console.WriteLine($"Precision max: {float.MaxValue}");
+            Console.WriteLine($"Precision min: {float.MinValue}");
+            
+
             Console.ReadLine();
 
             //Continue from: https://youtu.be/YrtFtdTTfv0?si=uZ9h6TZARa7JSdpl&t=858
