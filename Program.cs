@@ -11,8 +11,12 @@ namespace CSharpMiniProjfreeCodeCamp1
         static void Main(string[] args)
         {
 
-            int
+            //Continue from: https://youtu.be/YrtFtdTTfv0?si=LnE6dYRk-k0I5WtX&t=1000
 
+            //Multiple variable declarations
+            //int x, y, z;
+
+            int x = 10, y = 20, z = 30;
 
             int age = 23;
             Console.WriteLine($"age: {age}");
@@ -54,7 +58,6 @@ namespace CSharpMiniProjfreeCodeCamp1
 
             Console.ReadLine();
 
-            //Continue from: https://youtu.be/YrtFtdTTfv0?si=LnE6dYRk-k0I5WtX&t=1000
         }
     }
 }
