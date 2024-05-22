@@ -47,14 +47,11 @@ namespace CSharpMiniProjfreeCodeCamp1
             float floatyMcFloatFace = Convert.ToSingle(floaty);
             Console.WriteLine(floaty);
 
-
-            float precision = 5.000001F;
-
-            Console.WriteLine(precision);
-
-            //M at end to override double
-            decimal money = 14.99M;
+            string moneyString = "14.99";
+            Console.WriteLine(moneyString);
+            decimal money = Convert.ToDecimal(moneyString);
             Console.WriteLine(money);
+            //M at end to override double
 
             Console.ReadLine();
 
