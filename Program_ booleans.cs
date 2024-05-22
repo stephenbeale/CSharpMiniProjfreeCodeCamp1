@@ -39,6 +39,21 @@ namespace CSharpMiniProjfreeCodeCamp1
 
             Console.WriteLine(name);
 
+            //Can't add a char - adds them as unicode characrers
+            char ch = 'a';
+            ch += 'b';
+            Console.WriteLine(ch);
+
+            int i = 0;
+            i++;
+            Console.WriteLine(i);
+            Console.WriteLine(i++);
+            //put it before for it to increment THEN compile
+            Console.WriteLine(++i);
+            Console.WriteLine(i++);
+            Console.WriteLine(i);
+
+
             Console.ReadLine();
 
         }
