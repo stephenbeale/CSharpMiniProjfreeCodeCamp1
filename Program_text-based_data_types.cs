@@ -11,7 +11,7 @@ namespace CSharpMiniProjfreeCodeCamp1
         static void Main(string[] args)
         {
 
-            //Continue from: https://youtu.be/YrtFtdTTfv0?si=d-oKGjndWmYv_p3g&t=1234
+            //Continue from: https://youtu.be/YrtFtdTTfv0?si=usRziHVM6i2itCR4&t=1350
             string name = "Aba";
             //Char with single quotation
             char letter = 'a';
@@ -26,10 +26,12 @@ namespace CSharpMiniProjfreeCodeCamp1
             Console.WriteLine($"Text age as converted int: {textAge}");
             Console.WriteLine($"age: {age}");
 
-            string bigNumber = "90000000L";
+            string bigNumber = "-90000000";
+            Console.WriteLine($"Big# as string: {bigNumber}");
             //L enforces long, rather than int32
-            long bigNumber = 90000000L;
-            Console.WriteLine($"bigNumber {bigNumber}");
+            long big = Convert.ToInt64(bigNumber);
+            //long bigNumber = 90000000L;
+            Console.WriteLine($"Big# as converted long: {bigNumber}");
 
             long bigNumberNegative = -90000000L;
             Console.WriteLine($"bigNumberNegative {bigNumberNegative}");
