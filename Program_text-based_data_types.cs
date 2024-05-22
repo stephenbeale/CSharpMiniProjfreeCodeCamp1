@@ -24,7 +24,6 @@ namespace CSharpMiniProjfreeCodeCamp1
             //Converts back to int
             int age = Convert.ToInt32(textAge);
             Console.WriteLine($"Text age as converted int: {textAge}");
-            Console.WriteLine($"age: {age}");
 
             string bigNumber = "-90000000";
             Console.WriteLine($"Big# as string: {bigNumber}");
@@ -33,11 +32,11 @@ namespace CSharpMiniProjfreeCodeCamp1
             //long bigNumber = 90000000L;
             Console.WriteLine($"Big# as converted long: {bigNumber}");
 
-            long bigNumberNegative = -90000000L;
-            Console.WriteLine($"bigNumberNegative {bigNumberNegative}");
 
-            //D at end enforces double, if unsure
-            double negative = -55.2D;
+            string textNegative = "-55";
+            Console.WriteLine($"Text negative double as string: {textNegative}");
+            double negative = Convert.ToDouble(textNegative);
+            Console.WriteLine($"Text negative as converted double: {negative}");
 
             Console.WriteLine($"negative {negative}");
 
