@@ -33,7 +33,7 @@ namespace CSharpMiniProjfreeCodeCamp1
             Console.WriteLine($"Big# as converted long: {bigNumber}");
 
 
-            string textNegative = "-55";
+            string textNegative = "-55.2";
             Console.WriteLine($"Text negative double as string: {textNegative}");
             double negative = Convert.ToDouble(textNegative);
             Console.WriteLine($"Text negative as converted double: {negative}");
@@ -41,6 +41,13 @@ namespace CSharpMiniProjfreeCodeCamp1
             Console.WriteLine($"negative {negative}");
 
             //F at end to register number with decimal as a float, not a double
+            string floaty = "5.000001";
+            Console.WriteLine(floaty);
+            //Single because a float is defined as a single - it's a struct in the System.Single class
+            float floatyMcFloatFace = Convert.ToSingle(floaty);
+            Console.WriteLine(floaty);
+
+
             float precision = 5.000001F;
 
             Console.WriteLine(precision);
