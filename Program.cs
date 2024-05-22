@@ -32,6 +32,8 @@ namespace CSharpMiniProjfreeCodeCamp1
             Console.WriteLine($"negative {negative}");
 
             Console.ReadLine();
+
+            //Continue from: https://youtu.be/YrtFtdTTfv0?si=uZ9h6TZARa7JSdpl&t=858
         }
     }
 }
