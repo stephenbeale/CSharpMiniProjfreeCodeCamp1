@@ -10,6 +10,10 @@ namespace CSharpMiniProjfreeCodeCamp1
     {
         static void Main(string[] args)
         {
+
+            int
+
+
             int age = 23;
             Console.WriteLine($"age: {age}");
 
@@ -37,13 +41,20 @@ namespace CSharpMiniProjfreeCodeCamp1
             float precision = 5.000001F;
 
             Console.WriteLine(precision);
-            Console.WriteLine($"Precision max: {float.MaxValue}");
-            Console.WriteLine($"Precision min: {float.MinValue}");
-            
+            Console.WriteLine($"Float max: {float.MaxValue}");
+            Console.WriteLine($"Float min: {float.MinValue}");
+
+            //M at end to override double
+            decimal money = 1.3457955M;
+            Console.WriteLine(money);
+            Console.WriteLine($"Decimal max: {decimal.MaxValue}");
+            Console.WriteLine($"Decimal min: {decimal.MinValue}");
+
+
 
             Console.ReadLine();
 
-            //Continue from: https://youtu.be/YrtFtdTTfv0?si=_KTRA0M2ahi2gX1Y&t=954
+            //Continue from: https://youtu.be/YrtFtdTTfv0?si=LnE6dYRk-k0I5WtX&t=1000
         }
     }
 }
