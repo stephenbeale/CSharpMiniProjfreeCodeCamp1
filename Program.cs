@@ -30,6 +30,8 @@ namespace CSharpMiniProjfreeCodeCamp1
             double negative = -55.2D;
 
             Console.WriteLine($"negative {negative}");
+            Console.WriteLine($"Double max value: {double.MaxValue}");
+            Console.WriteLine($"Double min value: { double.MinValue}");
 
             Console.ReadLine();
 
