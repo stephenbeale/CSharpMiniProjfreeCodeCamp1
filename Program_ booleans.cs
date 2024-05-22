@@ -29,6 +29,16 @@ namespace CSharpMiniProjfreeCodeCamp1
             //Divides by 10
             age /= 10;
             Console.WriteLine(age);
+            double doubleAge = Convert.ToDouble(age);
+
+            doubleAge /= 2.4;
+            Console.WriteLine(doubleAge);
+
+            string name = "Aba";
+            name += " is programming";
+
+            Console.WriteLine(name);
+
             Console.ReadLine();
 
         }
