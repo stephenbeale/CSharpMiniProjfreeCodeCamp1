@@ -13,15 +13,16 @@ namespace CSharpMiniProjfreeCodeCamp1
     {
         static void Main(string[] args)
         {
-            // https://youtu.be/GlGpSQsS8uc?si=51IVeikxAXQXzvbp&t=2803
+            // https://youtu.be/GlGpSQsS8uc?si=xlfFYVMnWz8SsNLH&t=3093
 
             Console.Write("Enter your name:");
             string name = Console.ReadLine();
             Console.WriteLine($"Inputted name: {name}");
 
-
             Console.Write("Enter your age:");
             string age = Console.ReadLine();
+            Console.WriteLine($"Your age is {age}");
+
             Console.ReadLine();
         }
     }
