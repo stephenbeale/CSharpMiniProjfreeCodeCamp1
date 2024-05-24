@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Program_ console_input_output.cs" />
     <Compile Include="Program_ storing_user_data.cs" />
     <Compile Include="Program_ const.cs" />
     <Compile Include="Program_ vars.cs" />
