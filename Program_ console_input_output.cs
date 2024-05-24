@@ -13,7 +13,7 @@ namespace CSharpMiniProjfreeCodeCamp1
     {
         static void Main(string[] args)
         {
-            // https://youtu.be/GlGpSQsS8uc?si=xlfFYVMnWz8SsNLH&t=3093
+            // https://youtu.be/GlGpSQsS8uc?si=2ONCD3fMhkZXGi2M&t=3252
 
             Console.Write("Enter your name:");
             string name = Console.ReadLine();
@@ -21,7 +21,9 @@ namespace CSharpMiniProjfreeCodeCamp1
 
             Console.Write("Enter your age:");
             string age = Console.ReadLine();
-            Console.WriteLine($"Your age is {age}");
+            int agey = Convert.ToInt32(age);
+
+            Console.WriteLine($"Your age is {agey}");
 
             Console.ReadLine();
         }
