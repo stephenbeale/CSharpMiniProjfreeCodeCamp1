@@ -16,6 +16,19 @@ namespace CSharpMiniProjfreeCodeCamp1
 
             //Var must be initialised
             var age = 23;
+            Console.WriteLine(age);
+            
+            var bigNumber = 300000L;
+            Console.WriteLine(bigNumber);
+            
+            var negative = -55.2D;
+            Console.WriteLine(negative);
+
+            var precision = 5.000001F;
+            Console.WriteLine(precision);
+
+            var money = 14.99M;
+            Console.WriteLine(money);
 
             Console.ReadLine();
         }
