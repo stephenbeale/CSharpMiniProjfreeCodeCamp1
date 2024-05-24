@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Program_ const.cs" />
     <Compile Include="Program_ vars.cs" />
     <Compile Include="Program_ remainders.cs" />
     <Compile Include="Program_ booleans.cs" />
