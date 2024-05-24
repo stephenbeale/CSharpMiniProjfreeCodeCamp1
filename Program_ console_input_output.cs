@@ -20,8 +20,7 @@ namespace CSharpMiniProjfreeCodeCamp1
             Console.WriteLine($"Inputted name: {name}");
 
             Console.Write("Enter your age:");
-            string age = Console.ReadLine();
-            int agey = Convert.ToInt32(age);
+            int agey = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine($"Your age is {agey}");
 
