@@ -15,6 +15,8 @@ namespace CSharpMiniProjfreeCodeCamp1
             // https://youtu.be/GlGpSQsS8uc?si=51IVeikxAXQXzvbp&t=2803
 
             Console.WriteLine("Enter your name:");
+            string name = Console.ReadLine();
+            Console.WriteLine($"Inputted name: {name}");
 
             Console.ReadLine();
         }
