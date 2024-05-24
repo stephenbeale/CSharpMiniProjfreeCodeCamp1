@@ -30,6 +30,13 @@ namespace CSharpMiniProjfreeCodeCamp1
             var money = 14.99M;
             Console.WriteLine(money);
 
+            var name = "Aba";
+            Console.WriteLine(name);
+
+
+            var letter = 'a';
+            Console.WriteLine(letter);
+
             Console.ReadLine();
         }
     }
