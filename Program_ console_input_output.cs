@@ -20,14 +20,31 @@ namespace CSharpMiniProjfreeCodeCamp1
             Console.WriteLine($"Inputted name: {name}");
 
             Console.Write("Enter your age:");
+            //Converts directly from input
             int agey = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine($"Your age is {agey}");
 
-            if (agey > 18)
+            if (agey >= 18 && agey < 25)
             {
-                Console.WriteLine("You are allowed in");
+                Console.WriteLine("You are allowed in because you are 18 or older");
             }
+            else if(agey >= 25 && agey < 40)
+            {
+                Console.WriteLine("25 or older");
+            }
+            else if (agey >= 40 && agey <= 75)
+            {
+                Console.WriteLine("40 - 75 years");
+            }
+            if(agey < 0 || agey > 115)
+            {
+                Console.WriteLine("Invalid age");
+            }
+            else
+            {
+                Console.WriteLine("Valid age");
+            };
 
             Console.ReadLine();
         }
