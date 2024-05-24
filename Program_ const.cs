@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,33 +12,20 @@ namespace CSharpMiniProjfreeCodeCamp1
     {
         static void Main(string[] args)
         {
+            // https://youtu.be/GlGpSQsS8uc?si=h0Jjai45pv6P6OW6&t=2348
 
-            //Continue from: https://youtu.be/GlGpSQsS8uc?si=sedUOcFgDGRhaAEa&t=2095
+            const double vat = 20;
+            const double percentVat = vat / 100D;
+            const string version = "v1.0";
 
-            //Nick Chapsas - https://youtu.be/Sa184usBTXk?si=rgIDG_QIU1NO0V51&t=441
+            int balance = 1000;
 
-            //Var must be initialised
-            var age = 23;
-            Console.WriteLine(age);
+            Console.WriteLine($"VAT is {vat}%");
+            Console.WriteLine(balance * (vat / 100D));
+            Console.WriteLine(balance * percentVat);            
+
+
             
-            var bigNumber = 300000L;
-            Console.WriteLine(bigNumber);
-            
-            var negative = -55.2D;
-            Console.WriteLine(negative);
-
-            var precision = 5.000001F;
-            Console.WriteLine(precision);
-
-            var money = 14.99M;
-            Console.WriteLine(money);
-
-            var name = "Aba";
-            Console.WriteLine(name);
-
-
-            var letter = 'a';
-            Console.WriteLine(letter);
 
             Console.ReadLine();
         }
