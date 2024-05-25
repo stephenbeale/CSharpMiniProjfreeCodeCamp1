@@ -52,6 +52,19 @@ namespace CSharpMiniProjfreeCodeCamp1
             Console.Write("Enter second number: ");
             int numberB = Convert.ToInt32(Console.ReadLine());
 
+            int answer = numberA * numberB;
+            Console.Write($"What is {numberA} x {numberB}:");
+            string answerInput = Console.ReadLine();
+            int actualAsnwer = Convert.ToInt32(answerInput);
+
+            if(answer != actualAsnwer)
+            {
+                Console.WriteLine("Sorry, try again");
+            }
+            else
+            {
+                Console.WriteLine("Well done!");
+            }
 
             Console.ReadLine();
         }
