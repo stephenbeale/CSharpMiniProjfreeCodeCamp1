@@ -16,11 +16,19 @@ namespace CSharpMiniProjfreeCodeCamp1
         {
             // https://youtu.be/GlGpSQsS8uc?si=59z9daoQH2qsHdS-&t=4462
 
-            for(int i = 0; i < 5; i++)
+            Console.Write("How many times do you want to say hi?: ");
+            int loopCounter = Convert.ToInt32(Console.ReadLine());
+
+            for(int i = 0; i <= loopCounter ; i++)
             {
                 Console.WriteLine($"i is {i}");
             }
-            
+
+            for (int i = 0; i <= loopCounter ; i+= 2)
+            {
+                Console.WriteLine($"i is {i}");
+            }
+
             Console.ReadLine();
         }
     }
