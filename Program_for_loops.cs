@@ -19,15 +19,22 @@ namespace CSharpMiniProjfreeCodeCamp1
             Console.Write("How many times do you want to say hi?: ");
             int loopCounter = Convert.ToInt32(Console.ReadLine());
 
-            for(int i = 0; i <= loopCounter ; i++)
+            if (loopCounter > 0)
             {
-                Console.WriteLine($"i is {i}");
-            }
+                for (int i = 0; i <= loopCounter; i++)
+                {
+                    Console.WriteLine($"i is {i}");
+                }
 
-            for (int i = 0; i <= loopCounter ; i+= 2)
-            {
-                Console.WriteLine($"i is {i}");
+                for (int i = 0; i <= loopCounter; i += 2)
+                {
+                    Console.WriteLine($"i is {i}");
+                }
             }
+            else 
+            {
+                Console.WriteLine("Can't start loop with 0");
+            };
 
             Console.ReadLine();
         }
