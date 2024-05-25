@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Program_ternary_or_conditional.cs" />
     <Compile Include="Program_while_loop.cs" />
     <Compile Include="Program_for_loops.cs" />
     <Compile Include="Program_ switch_statements.cs" />
