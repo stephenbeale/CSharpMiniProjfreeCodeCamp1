@@ -31,6 +31,10 @@ namespace CSharpMiniProjfreeCodeCamp1
 
             //Outputs currency - toString with C string passed
             Console.WriteLine(money.ToString("C"));
+            Console.WriteLine(money.ToString("C0"));
+            Console.WriteLine(money.ToString("C1"));
+            Console.WriteLine(money.ToString("C2"));
+            Console.WriteLine(money.ToString("C3"));
            
             Console.ReadLine();
         }
