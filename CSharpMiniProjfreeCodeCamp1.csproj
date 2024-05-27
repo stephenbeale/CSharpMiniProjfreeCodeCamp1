@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Program_arrays.cs" />
     <Compile Include="Program_string_functions.cs" />
     <Compile Include="Program_string_formatting.cs" />
     <Compile Include="Program_verbatim_string_literal.cs" />
