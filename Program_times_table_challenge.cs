@@ -11,27 +11,25 @@ namespace CSharpMiniProjfreeCodeCamp1
             bool numInput = false;
             Console.WriteLine("Enter a number to multiply by:");
             var input = Console.ReadLine();
-
-            try
-            {
+            
                 if (int.TryParse(input, out int result))
                 {
                     Console.WriteLine("Times table is:");
 
                     for (int i = 1; i <= 12; i++)
                     {
-                        Console.WriteLine($"{i}: {i} * {result} = {i * result}");
+                        //My way
+                        Console.WriteLine($"My way: {i}: {i} * {result} = {i * result}");
+
+                    //Course way
+                    //First arg corresponds to params passed as arguments
+                    Console.WriteLine("Course way: {0} x {1} = {2}", i, input, i * result);
                     }
                 }
-            }
-
-            //Only use try-catch for specific exceptions
-            catch 
-            {
-                throw new Exception();
-
-            }          
-
+                else
+                {
+                    Console.WriteLine("Invalid input");
+                }
             Console.ReadLine();
         }
     }
