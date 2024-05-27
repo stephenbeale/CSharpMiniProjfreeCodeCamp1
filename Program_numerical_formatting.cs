@@ -20,8 +20,8 @@ namespace CSharpMiniProjfreeCodeCamp1
             double value = 1000D / 12.34D;
 
             Console.WriteLine(value);
-            //Pattern to format to
-            Console.WriteLine(string.Format("{0}, {1}, {2}", value, 1000, 8));
+            //Pattern to format to - 0.00 outputs to 2 decimal places
+            Console.WriteLine(string.Format("{0:0.00}, {1}, {2}", value, 1000, 8));
            
             Console.ReadLine();
         }
