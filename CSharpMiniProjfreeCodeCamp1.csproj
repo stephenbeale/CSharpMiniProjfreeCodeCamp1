@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Program_string_formatting.cs" />
     <Compile Include="Program_verbatim_string_literal.cs" />
     <Compile Include="Program_fizz_buzz_challenge.cs" />
     <Compile Include="Program_times_table_challenge.cs" />
