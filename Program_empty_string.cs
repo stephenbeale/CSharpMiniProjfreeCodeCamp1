@@ -4,6 +4,7 @@ using System.Linq.Expressions;
 using System.Net.Http;
 using System.Runtime.Remoting.Services;
 using System.Threading;
+using System.Xml;
 
 namespace CSharpMiniProjfreeCodeCamp1
 {
@@ -44,13 +45,34 @@ namespace CSharpMiniProjfreeCodeCamp1
                 Console.WriteLine("Different");
             };
 
-            message = "C# is awesome";
+            message = "C# is awesome\n";
 
             for (int i = 0; i < message.Length; i++)
             {
                 Console.Write(message[i]);
-                Thread.Sleep(250);
+                Thread.Sleep(50);
             }
+
+            bool contains = false;
+
+            for (int i = 0; i < message.Length; i++)
+            {
+                if (message[i] == '#')
+                {
+                    contains = true;
+                }
+                if (contains)
+                {
+                    Console.WriteLine("# found in your string");
+                    break;
+                }
+            }
+
+            if(!string.IsNullOrEmpty(name)) {
+                Console.WriteLine("String is not null or empty!");
+            }
+
+            Console.WriteLine(message.Contains("#"));
 
             Console.ReadLine();
         }
