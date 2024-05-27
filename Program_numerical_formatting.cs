@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Diagnostics.Eventing.Reader;
+using System.Globalization;
 using System.Linq;
 using System.Runtime.Remoting.Services;
 using System.Text;
@@ -31,10 +32,17 @@ namespace CSharpMiniProjfreeCodeCamp1
 
             //Outputs currency - toString with C string passed
             Console.WriteLine(money.ToString("C"));
+            //Defines decimals after
             Console.WriteLine(money.ToString("C0"));
             Console.WriteLine(money.ToString("C1"));
             Console.WriteLine(money.ToString("C2"));
             Console.WriteLine(money.ToString("C3"));
+
+            Console.WriteLine(money.ToString("C", CultureInfo.CurrentCulture));
+            //English GB culture
+            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-GB")));
+            //US culture
+            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
            
             Console.ReadLine();
         }
