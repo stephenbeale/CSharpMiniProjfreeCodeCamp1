@@ -26,8 +26,12 @@ namespace CSharpMiniProjfreeCodeCamp1
             {
                 if (int.TryParse(input, out int result))
                 {
-                    Console.WriteLine($"Result is {result *= result}");
-                    
+                    Console.WriteLine("Times table is:");
+
+                    for (int i = 1; i <= 12; i++)
+                    {
+                        Console.WriteLine($"{i}: {i} * {result} = {i * result}");
+                    }
                 }
             }
             catch 
