@@ -22,6 +22,12 @@ namespace CSharpMiniProjfreeCodeCamp1
             Console.WriteLine(value);
             //Pattern to format to - 0.00 outputs to 2 decimal places
             Console.WriteLine(string.Format("{0:0.00}, {1}, {2}", value, 1000, 8));
+
+            double money = 10D / 3D;
+
+            Console.WriteLine(money);
+
+            Console.WriteLine(string.Format(" {0:0.00}", money));
            
             Console.ReadLine();
         }
