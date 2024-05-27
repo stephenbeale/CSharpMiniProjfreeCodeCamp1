@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Program_times_table_challenge.cs" />
     <Compile Include="Program_try_parse.cs" />
     <Compile Include="Program_numerical_formatting.cs" />
     <Compile Include="Program_ternary_or_conditional.cs" />
