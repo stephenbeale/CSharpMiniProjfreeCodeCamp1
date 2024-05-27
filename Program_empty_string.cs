@@ -23,6 +23,13 @@ namespace CSharpMiniProjfreeCodeCamp1
             {
                 Console.WriteLine("Name is empty.");
             }
+
+            if (name != "Steve") {
+                Console.WriteLine("You are not Steve");
+            }
+
+
+
             Console.ReadLine();            
         }
     }
