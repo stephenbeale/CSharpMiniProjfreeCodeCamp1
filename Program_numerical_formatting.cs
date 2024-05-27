@@ -24,7 +24,7 @@ namespace CSharpMiniProjfreeCodeCamp1
             //Pattern to format to - 0.00 outputs to 2 decimal places
             Console.WriteLine(string.Format("{0:0.00}, {1}, {2}", value, 1000, 8));
 
-            double money = 10D / 3D;
+            double money = -10D / 3D;
 
             Console.WriteLine(money);
 
@@ -41,8 +41,13 @@ namespace CSharpMiniProjfreeCodeCamp1
             Console.WriteLine(money.ToString("C", CultureInfo.CurrentCulture));
             //English GB culture
             Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-GB")));
+            //Welsh?
+            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-CY")));
             //US culture
             Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
+            //NZ
+            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-NZ")));
+            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-NZ")));
            
             Console.ReadLine();
         }
