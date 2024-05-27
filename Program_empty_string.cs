@@ -48,8 +48,8 @@ namespace CSharpMiniProjfreeCodeCamp1
 
             for (int i = 0; i < message.Length; i++)
             {
-                Console.WriteLine(message[i]);
-                Thread.Sleep(1000);
+                Console.Write(message[i]);
+                Thread.Sleep(250);
             }
 
             Console.ReadLine();
