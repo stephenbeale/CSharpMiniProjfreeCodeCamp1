@@ -19,7 +19,10 @@ namespace CSharpMiniProjfreeCodeCamp1
             // https://youtu.be/GlGpSQsS8uc?si=QMidGYoWBaMcy33O&t=5764
             Console.Write("Enter a number: ");
             string numInput = Console.ReadLine();
-            
+            int num = 0;
+
+            int.TryParse(numInput, out num);
+            Console.WriteLine(num);
             Console.Write(Convert.ToInt32(numInput));
             
             Console.ReadLine();
