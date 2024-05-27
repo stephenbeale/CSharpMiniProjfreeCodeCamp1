@@ -68,6 +68,7 @@ namespace CSharpMiniProjfreeCodeCamp1
                 }
             }
 
+            //Belt and braces - if null, do not get exception for this.
             if(!string.IsNullOrEmpty(name)) {
                 Console.WriteLine("String is not null or empty!");
             }
