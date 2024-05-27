@@ -75,6 +75,17 @@ namespace CSharpMiniProjfreeCodeCamp1
 
             Console.WriteLine(message.Contains("#"));
 
+            //Print string in reverse challenge
+
+            char[] messageChars = message.ToCharArray();
+            for (int i = messageChars.Length; i > 0; i--)
+            {
+                if (!string.IsNullOrEmpty(message))
+                {
+                    Console.Write(messageChars[i - 1]);
+                }
+            }
+
             Console.ReadLine();
         }
     }
