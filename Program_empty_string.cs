@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Net.Http;
 using System.Runtime.Remoting.Services;
 using System.Threading;
 
@@ -14,8 +15,8 @@ namespace CSharpMiniProjfreeCodeCamp1
 
             Console.WriteLine("Enter your name: ");
             string name = Console.ReadLine();
-            
-            if(name != string.Empty)
+
+            if (name != string.Empty)
             {
                 Console.WriteLine($"Your name is {name}");
             }
@@ -24,13 +25,34 @@ namespace CSharpMiniProjfreeCodeCamp1
                 Console.WriteLine("Name is empty.");
             }
 
-            if (name != "Steve") {
+            if (name != "Steve")
+            {
                 Console.WriteLine("You are not Steve");
             }
 
+            string message = "Hello";
 
+            char[] chars = new char[] { 'H', 'e', 'l', 'l', 'o' };
+            object newCompare = new string(chars);
 
-            Console.ReadLine();            
+            if (message.Equals(newCompare))
+            {
+                Console.WriteLine("Same");
+            }
+            else
+            {
+                Console.WriteLine("Different");
+            };
+
+            message = "C# is awesome";
+
+            for (int i = 0; i < message.Length; i++)
+            {
+                Console.WriteLine(message[i]);
+                Thread.Sleep(1000);
+            }
+
+            Console.ReadLine();
         }
     }
 }
