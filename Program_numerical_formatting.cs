@@ -28,6 +28,9 @@ namespace CSharpMiniProjfreeCodeCamp1
             Console.WriteLine(money);
 
             Console.WriteLine(string.Format(" {0:0.00}", money));
+
+            //Outputs currency - toString with C string passed
+            Console.WriteLine(money.ToString("C"));
            
             Console.ReadLine();
         }
