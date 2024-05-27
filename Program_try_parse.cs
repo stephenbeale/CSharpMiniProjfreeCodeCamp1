@@ -17,13 +17,24 @@ namespace CSharpMiniProjfreeCodeCamp1
         static void Main(string[] args)
         {
             // https://youtu.be/GlGpSQsS8uc?si=QMidGYoWBaMcy33O&t=5764
-            Console.Write("Enter a number: ");
-            string numInput = Console.ReadLine();
-            int num = 0;
 
-            int.TryParse(numInput, out num);
-            Console.WriteLine(num);
-            Console.Write(Convert.ToInt32(numInput));
+            bool success = true;
+
+            while (success)
+            {
+                Console.Write("Enter a number: ");
+                string numInput = Console.ReadLine();
+
+                if(int.TryParse(numInput, out int num))
+                {
+                    success = false;
+                    Console.WriteLine(num);
+                }
+                else
+                {
+                    Console.WriteLine("Failed to convert!");
+                }
+            }
             
             Console.ReadLine();
         }
