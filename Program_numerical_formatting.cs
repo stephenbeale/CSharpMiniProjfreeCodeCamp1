@@ -1,55 +1,55 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Diagnostics.Eventing.Reader;
-using System.Globalization;
-using System.Linq;
-using System.Runtime.Remoting.Services;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Schema;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.ComponentModel;
+//using System.Diagnostics;
+//using System.Diagnostics.Eventing.Reader;
+//using System.Globalization;
+//using System.Linq;
+//using System.Runtime.Remoting.Services;
+//using System.Text;
+//using System.Threading.Tasks;
+//using System.Xml.Schema;
 
-namespace CSharpMiniProjfreeCodeCamp1
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            // https://youtu.be/GlGpSQsS8uc?si=QMidGYoWBaMcy33O&t=5764
+//namespace CSharpMiniProjfreeCodeCamp1
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            // https://youtu.be/GlGpSQsS8uc?si=QMidGYoWBaMcy33O&t=5764
 
-            double value = 1000D / 12.34D;
+//            double value = 1000D / 12.34D;
 
-            Console.WriteLine(value);
-            //Pattern to format to - 0.00 outputs to 2 decimal places
-            Console.WriteLine(string.Format("{0:0.00}, {1}, {2}", value, 1000, 8));
+//            Console.WriteLine(value);
+//            //Pattern to format to - 0.00 outputs to 2 decimal places
+//            Console.WriteLine(string.Format("{0:0.00}, {1}, {2}", value, 1000, 8));
 
-            double money = -10D / 3D;
+//            double money = -10D / 3D;
 
-            Console.WriteLine(money);
+//            Console.WriteLine(money);
 
-            Console.WriteLine(string.Format(" {0:0.00}", money));
+//            Console.WriteLine(string.Format(" {0:0.00}", money));
 
-            //Outputs currency - toString with C string passed
-            Console.WriteLine(money.ToString("C"));
-            //Defines decimals after
-            Console.WriteLine(money.ToString("C0"));
-            Console.WriteLine(money.ToString("C1"));
-            Console.WriteLine(money.ToString("C2"));
-            Console.WriteLine(money.ToString("C3"));
+//            //Outputs currency - toString with C string passed
+//            Console.WriteLine(money.ToString("C"));
+//            //Defines decimals after
+//            Console.WriteLine(money.ToString("C0"));
+//            Console.WriteLine(money.ToString("C1"));
+//            Console.WriteLine(money.ToString("C2"));
+//            Console.WriteLine(money.ToString("C3"));
 
-            Console.WriteLine(money.ToString("C", CultureInfo.CurrentCulture));
-            //English GB culture
-            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-GB")));
-            //Welsh?
-            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-CY")));
-            //US culture
-            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
-            //NZ
-            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-NZ")));
-            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-NZ")));
+//            Console.WriteLine(money.ToString("C", CultureInfo.CurrentCulture));
+//            //English GB culture
+//            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-GB")));
+//            //Welsh?
+//            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-CY")));
+//            //US culture
+//            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
+//            //NZ
+//            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-NZ")));
+//            Console.WriteLine(money.ToString("C", CultureInfo.CreateSpecificCulture("en-NZ")));
            
-            Console.ReadLine();
-        }
-    }
-}
+//            Console.ReadLine();
+//        }
+//    }
+//}
