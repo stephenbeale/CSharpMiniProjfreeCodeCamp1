@@ -1,14 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Diagnostics;
-using System.Diagnostics.Eventing.Reader;
-using System.Globalization;
-using System.Linq;
-using System.Runtime.Remoting.Services;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Schema;
 
 namespace CSharpMiniProjfreeCodeCamp1
 {
@@ -34,6 +24,8 @@ namespace CSharpMiniProjfreeCodeCamp1
                     }
                 }
             }
+
+            //Only use try-catch for specific exceptions
             catch 
             {
                 throw new Exception();
