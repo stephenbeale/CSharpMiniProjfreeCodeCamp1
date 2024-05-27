@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace CSharpMiniProjfreeCodeCamp1
 {
@@ -10,15 +11,17 @@ namespace CSharpMiniProjfreeCodeCamp1
             
                 for (int i = 1; i <= 15; i++)
                 {
-                    if((i % 3 == 0 && i % 5 == 0)) 
+                bool threeDiv = i % 3 == 0;
+                bool fiveDiv  = i % 5 == 0;
+                if ((threeDiv && fiveDiv)) 
                     {
                     Console.WriteLine("Fizz Buzz");                                        
                     }
-                    if(i % 5 == 0)
+                    if(fiveDiv)
                     {
                     Console.WriteLine("Buzz");
                     }
-                    else if (i % 3 == 0)
+                    else if (threeDiv)
                     {
                     Console.WriteLine("Fizz");
                     }
