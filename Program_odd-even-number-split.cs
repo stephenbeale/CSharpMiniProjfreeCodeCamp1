@@ -90,7 +90,9 @@ namespace CSharpMiniProjfreeCodeCamp1
         {
             return num + num;
         }
-        static int Add(int num, [Optional] int num2)
+
+        //Optional params with that keyword
+        static int Add(int num, int num2 = default)
         {
             return num + num;
         }
