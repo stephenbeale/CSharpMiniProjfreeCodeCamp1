@@ -52,6 +52,32 @@ namespace CSharpMiniProjfreeCodeCamp1
                 Console.WriteLine(pair);
             }
 
+            if(names.TryGetValue(2, out string namey))
+            {
+                Console.WriteLine(namey);
+            }
+
+            Dictionary<string, string> teachers = new Dictionary<string, string>
+            {
+                { "Spanish", "Steve" },
+                { "Software", "Pete" },
+                { "D&T", "Stu" }
+            };
+
+            if (teachers.TryGetValue("software", out string teacher))
+            {
+                Console.WriteLine(teacher);
+            }
+            if (teachers.TryGetValue("Software", out string teacher2))
+            {
+                Console.WriteLine(teacher2);
+            }
+
+            if(teachers.ContainsKey("Spanish"))
+            {
+                Console.WriteLine("Spanish teacher found");
+            }
+
             Console.ReadLine();
         }
     }
