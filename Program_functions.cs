@@ -35,7 +35,9 @@ namespace CSharpMiniProjfreeCodeCamp1
             PrintDetails( name, age, address );
 
             //Specify and can change the order
-            PrintDetails(agey: age, addressy : address, namey : name);
+            PrintDetails(agey: age, 
+                addressy : address, 
+                namey : name);
 
             Console.WriteLine();
 
