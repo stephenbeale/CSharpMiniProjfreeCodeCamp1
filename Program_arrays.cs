@@ -35,6 +35,13 @@ namespace CSharpMiniProjfreeCodeCamp1
                 Console.WriteLine($"Array: {item}");
             }
 
+            Array.Clear(numbers, 0, numbers.Length);
+
+            foreach (var item in numbers)
+            {
+                Console.WriteLine($"Array: {item}");
+            }
+
             Console.ReadLine();
         }
     }
