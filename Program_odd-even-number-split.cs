@@ -53,16 +53,36 @@ namespace CSharpMiniProjfreeCodeCamp1
                 {3, 60}
             };
 
-            helloWorldy();
+            HelloWorldy();
 
 
+            //Can call functions directly 
+            Console.WriteLine($"{HelloWorld2()}");
 
+            //Console.WriteLine($"{helloWorldy()}");
+            Console.WriteLine($"Multiplier {Multiplier(4)}");
+            Console.WriteLine($"{Add(3)}");
             Console.ReadLine();
         }
 
-        static void helloWorldy()
+        static void HelloWorldy()
         {
             Console.WriteLine("Hello World!");
+        }
+
+        static string HelloWorld2()
+        {
+            return "Hello World!";
+        }
+
+        static int Multiplier(int num)
+        {
+            return num * num;
+        }
+
+        static int Add(int num)
+        {
+            return num + num;
         }
     }
 }
