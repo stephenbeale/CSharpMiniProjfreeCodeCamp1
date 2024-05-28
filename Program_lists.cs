@@ -33,6 +33,10 @@ namespace CSharpMiniProjfreeCodeCamp1
                 Console.WriteLine(list2[i]);
             }
 
+            list2.ForEach(x => Console.WriteLine(x));
+
+            list2.RemoveAt(3);
+
             foreach (int num in list2)
             {
                 Console.WriteLine(num);
