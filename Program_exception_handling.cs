@@ -17,28 +17,35 @@ namespace CSharpMiniProjfreeCodeCamp1
         {
             // https://youtu.be/GlGpSQsS8uc?si=P0siFmWiXEtHdPDM&t=21652
 
-            try
+            bool looping = false;
+
+            while (!looping)
             {
-                Console.WriteLine("Enter a number: ");
-                int num = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine($"Your number: {num}");
+                try
+                {
+                    Console.WriteLine("Enter a number: ");
+                    int num = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine($"Your number: {num}");
+
+                    looping = true;
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Please only enter numbers");
+
+                }
+                catch (OverflowException)
+                {
+                    Console.WriteLine("Please enter a number less than 2 billion");
+
+                }
+                catch (Exception e)
+                {
+                    e.StackTrace;
+                    Console.WriteLine("Exception!");
+                }
             }
-            catch (FormatException)
-            {
-                Console.WriteLine("Please only enter numbers");
-                
-            }
-            catch (OverflowException)
-            {
-                Console.WriteLine("Please enter a number less than 2 billion");
-                
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("Exception!");
-            }
-            
-            
+
             Console.ReadLine();
         }
     }
