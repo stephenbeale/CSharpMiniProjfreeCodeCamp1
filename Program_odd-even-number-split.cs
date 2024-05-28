@@ -16,6 +16,32 @@ namespace CSharpMiniProjfreeCodeCamp1
         {
             // https://youtu.be/GlGpSQsS8uc?si=zSPosrptEZipT6M2&t=15371
 
+            List<int> odds = new List<int>();
+            List<int> evens = new List<int>();
+
+            for (int i = 0; i < 20; i++) 
+            {
+                if (i % 2 != 0)
+                {
+                    odds.Add(i);
+                }
+                else 
+                { 
+                    evens.Add(i);
+                }
+            }
+
+            Console.WriteLine($"Odds list:");
+            foreach (int i in odds)
+            {
+                Console.WriteLine($"{i}");
+            }
+            
+            Console.WriteLine($"Evens list: {evens}");
+            foreach (int i in evens)
+            {
+                Console.WriteLine($"{i}");
+            }
 
             Console.ReadLine();
         }
