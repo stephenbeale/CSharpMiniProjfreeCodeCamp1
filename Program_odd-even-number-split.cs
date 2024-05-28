@@ -62,6 +62,10 @@ namespace CSharpMiniProjfreeCodeCamp1
             //Console.WriteLine($"{helloWorldy()}");
             Console.WriteLine($"Multiplier {Multiplier(4)}");
             Console.WriteLine($"{Add(3)}");
+
+            Console.WriteLine($"Lambda anonymous: {addLambdaAnon(2, 3)}"); // Output: 5
+
+
             Console.ReadLine();
         }
 
@@ -93,6 +97,9 @@ namespace CSharpMiniProjfreeCodeCamp1
         public int DoubleProperty => MyProperty * 2;
 
         //Single-line Lambda function - anonymous or lambda function
-        Func<int, int, int> addLambdaAnon = (x, y) => x + y;
+        // <in1, in2, out result> name = parameters => action on parameters
+        static Func<int, int, int> addLambdaAnon = (x, y) => x + y;
+
+        Func<string, string> stringAnonFunc = (name) => name.Insert(0, "AnonymousFunctionCalled ");
     }
 }
