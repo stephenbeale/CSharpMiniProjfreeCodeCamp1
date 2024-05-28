@@ -17,8 +17,19 @@ namespace CSharpMiniProjfreeCodeCamp1
         {
             // https://youtu.be/GlGpSQsS8uc?si=i9d92AhIv49AiKzJ&t=24635      
 
-            Person person = new Person("Mr", 1, "Steve");
-            Console.WriteLine(person.Name);          
+            //Person person = new Person("Mr", 1, "Steve");
+            Person personWithoutConstructor;
+
+            personWithoutConstructor.Id = 1;
+            personWithoutConstructor.Name = "John";
+            personWithoutConstructor.Title = "Captain";
+
+            Console.WriteLine(personWithoutConstructor.Name);
+            //Console.WriteLine(personWithoutConstructor);          
+            //Console.WriteLine(personWithoutConstructor.ToString());          
+            Console.WriteLine(personWithoutConstructor.Id);          
+            Console.WriteLine(personWithoutConstructor.Title);          
+            //Console.WriteLine(personWithoutConstructor.GetType());          
 
             Console.ReadLine();
         }
@@ -29,12 +40,13 @@ namespace CSharpMiniProjfreeCodeCamp1
             public int Id;
             public string Title;
 
-            public Person(string title, int id, string name)
-            {
-                Title= title;
-                Id= id;
-                Name= name;
-            }
+            //Can use a constructor
+            //public Person(string title, int id, string name)
+            //{
+            //    Title= title;
+            //    Id= id;
+            //    Name= name;
+            //}
         }
     }
 }
