@@ -48,5 +48,11 @@ namespace CSharpMiniProjfreeCodeCamp1
             //    Name= name;
             //}
         }
+
+        public class Persona
+        {
+
+        }
+
     }
 }
