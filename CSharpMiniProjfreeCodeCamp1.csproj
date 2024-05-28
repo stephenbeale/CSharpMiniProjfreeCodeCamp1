@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Program_structs.cs" />
     <Compile Include="Program_exception_handling.cs" />
     <Compile Include="Program_functions.cs" />
     <Compile Include="Program_odd-even-number-split.cs" />
