@@ -19,13 +19,21 @@ namespace CSharpMiniProjfreeCodeCamp1
             var test = "";
             test.Replace(" ", "");
 
-            Console.WriteLine($"Array: {numbers}");
+            foreach (var item in numbers)
+            {
+                Console.WriteLine($"Array: {item}");
+            }
+
+            
             Array.Sort(numbers);
-            Console.WriteLine($"Array: {numbers}");
+            //Does nothing
+            //Console.WriteLine($"Array: {numbers}");
             Array.Reverse(numbers);
-            Console.WriteLine($"Array: {numbers}");
 
-
+            foreach (var item in numbers)
+            {
+                Console.WriteLine($"Array: {item}");
+            }
 
             Console.ReadLine();
         }
