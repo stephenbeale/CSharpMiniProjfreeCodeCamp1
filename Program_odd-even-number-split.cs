@@ -92,6 +92,7 @@ namespace CSharpMiniProjfreeCodeCamp1
         }
 
         //Optional params with that keyword
+        //Default a better option for optional
         static int Add(int num, int num2 = default)
         {
             return num + num;
