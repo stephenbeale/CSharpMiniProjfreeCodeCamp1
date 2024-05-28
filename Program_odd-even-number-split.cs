@@ -85,6 +85,14 @@ namespace CSharpMiniProjfreeCodeCamp1
             return num + num;
         }
 
+        //Inline function initialisation
         static int Divider(int numerator, int denominator) => numerator / denominator;
+
+        //Single-line property getter
+        public int MyProperty { get; } = 42;
+        public int DoubleProperty => MyProperty * 2;
+
+        //Single-line Lambda function - anonymous or lambda function
+        Func<int, int, int> addLambdaAnon = (x, y) => x + y;
     }
 }
