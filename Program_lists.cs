@@ -28,6 +28,11 @@ namespace CSharpMiniProjfreeCodeCamp1
                 list2.Add(num);
             }
 
+            for (int i = 0;i < list2.Count; i++)
+            {
+                Console.WriteLine(list2[i]);
+            }
+
             foreach (int num in list2)
             {
                 Console.WriteLine(num);
