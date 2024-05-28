@@ -84,5 +84,7 @@ namespace CSharpMiniProjfreeCodeCamp1
         {
             return num + num;
         }
+
+        static int Divider(int numerator, int denominator) => numerator / denominator;
     }
 }
