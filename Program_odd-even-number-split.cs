@@ -4,6 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Net.Http;
 using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Runtime.Remoting.Services;
 using System.Threading;
 using System.Xml;
@@ -65,6 +66,7 @@ namespace CSharpMiniProjfreeCodeCamp1
 
             Console.WriteLine($"Lambda anonymous: {addLambdaAnon(2, 3)}"); // Output: 5
 
+            Console.WriteLine($"Anonymous function {stringAnonFunc("Steve")}");
 
             Console.ReadLine();
         }
@@ -88,6 +90,10 @@ namespace CSharpMiniProjfreeCodeCamp1
         {
             return num + num;
         }
+        static int Add(int num, [Optional] int num2)
+        {
+            return num + num;
+        }
 
         //Inline function initialisation
         static int Divider(int numerator, int denominator) => numerator / denominator;
@@ -100,6 +106,6 @@ namespace CSharpMiniProjfreeCodeCamp1
         // <in1, in2, out result> name = parameters => action on parameters
         static Func<int, int, int> addLambdaAnon = (x, y) => x + y;
 
-        Func<string, string> stringAnonFunc = (name) => name.Insert(0, "AnonymousFunctionCalled ");
+        static Func<string, string> stringAnonFunc = (name) => name.Insert(0, "AnonymousFunctionCalled ");
     }
 }
