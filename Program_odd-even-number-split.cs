@@ -43,7 +43,26 @@ namespace CSharpMiniProjfreeCodeCamp1
                 Console.WriteLine($"{i}");
             }
 
+
+            //Array insert task - https://youtu.be/GlGpSQsS8uc?si=aDLLEj33HNPkQJxy&t=15789
+
+            Dictionary<int, int> numLength = new Dictionary<int, int>()
+            {
+                {1, 20 },
+                {2, 30},
+                {3, 60}
+            };
+
+            helloWorldy();
+
+
+
             Console.ReadLine();
+        }
+
+        static void helloWorldy()
+        {
+            Console.WriteLine("Hello World!");
         }
     }
 }
