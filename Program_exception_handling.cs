@@ -29,19 +29,19 @@ namespace CSharpMiniProjfreeCodeCamp1
 
                     looping = true;
                 }
-                catch (FormatException)
-                {
-                    Console.WriteLine("Please only enter numbers");
+                //catch (FormatException)
+                //{
+                //    Console.WriteLine("Please only enter numbers");
 
-                }
-                catch (OverflowException)
-                {
-                    Console.WriteLine("Please enter a number less than 2 billion");
+                //}
+                //catch (OverflowException)
+                //{
+                //    Console.WriteLine("Please enter a number less than 2 billion");
 
-                }
+                //}
                 catch (Exception e)
                 {
-                    e.StackTrace;
+                    Console.WriteLine($"Error: {e.Message}");
                     Console.WriteLine("Exception!");
                 }
             }
