@@ -35,6 +35,26 @@ namespace CSharpMiniProjfreeCodeCamp1
                 Console.WriteLine($"Array: {item}");
             }
 
+            Array.Clear(numbers, 3, 2);
+            int[] numbers2 = new int[] { };
+            Array.Copy(numbers, numbers2, 0);
+            foreach (var item in numbers)
+            {
+                Console.WriteLine($"Array: {item}");
+            }
+
+            //Get element at given position
+            int position = Array.IndexOf(numbers, 4);
+
+            Console.WriteLine("Position four:" + position);
+
+            Console.WriteLine($"New array");
+
+            foreach (var item in numbers2)
+            {
+                Console.WriteLine($"Array: {item}");
+            }
+
             Array.Clear(numbers, 0, numbers.Length);
 
             foreach (var item in numbers)
