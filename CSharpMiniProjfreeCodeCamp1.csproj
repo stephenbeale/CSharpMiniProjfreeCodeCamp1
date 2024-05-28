@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Program_dictionary.cs" />
     <Compile Include="Program_lists.cs" />
     <Compile Include="Program_arrays.cs" />
     <Compile Include="Program_string_functions.cs" />
